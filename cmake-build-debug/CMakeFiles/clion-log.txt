@@ -1,0 +1,4 @@
+C:\cygwin64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug

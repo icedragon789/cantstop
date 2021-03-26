@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="P2_Placzek"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="P2_Placzek">
+				<Option output="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/P2_Placzek.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 P2_Placzek"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="P2_Placzek/fast">
+				<Option output="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/P2_Placzek.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 P2_Placzek/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced\ CPP/Term\ Project/P7-Placzek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Board.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Board.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Column.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Column.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Dice.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Dice.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Game.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Game.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Player.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Player.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/enums.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/enums.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/main.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/tools.cpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/tools.hpp">
+			<Option target="P2_Placzek"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
