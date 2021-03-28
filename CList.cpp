@@ -92,10 +92,10 @@ void CList::remove(){
         int i = 0;
         // current found so free memory and display the new list
         while (i < counter) {
-            if (d->myItem == current->myItem) {
-                d = current->next;
+            if (d->next->myItem == current->myItem) {
+                d->next = current->next;
                 delete current;
-                current = d->next;
+                current = d;
                 counter--;
                 break;
             } else {
