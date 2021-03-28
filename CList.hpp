@@ -20,7 +20,10 @@ class Cell {
 private: // all servant members will be private
     Player* myItem; // hold the data
     Cell* next; // form the linked list
-    Cell(Player* data, Cell* reference) {reference=nullptr;};
+    Cell(Player* data, Cell* reference): myItem(data), next(reference) {
+        reference=nullptr;
+    };
+    ~Cell() { delete myItem; }
 
     friend class CList; // gives friendship to CList
 };
@@ -29,7 +32,7 @@ class CList {
 private:
     int counter; // store number of Items in the list
     Cell *headPtr;
-    Player* current; // pointer to the current item
+    Cell* current; // pointer to the current item
 
 public:
     CList() { headPtr = nullptr; }; // constructor initializes the list to empty

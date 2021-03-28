@@ -18,14 +18,23 @@ int main() {
 
 void testList(CList c) {
 //    typedef Player* Item;
-    c.init();
     Player* p1 = new Player("Ben", blue);
     c.addItem(p1);
-    Player* p2 = new Player("Ben", blue);
+    Player* p2 = new Player("Benjie", orange);
     c.addItem(p2);
+    Player* p3 = new Player("Benjo", yellow);
+    c.addItem(p3);
+    c.init();
 
-    cout << c << endl;
+    cout << "LIST:\n" << c << endl;
 
-    delete p1;
-    delete p2;
+    c.next();
+    c.remove();
+
+    cout << "LIST:\n" << c << endl;
+
+
+//    delete p1;
+//    delete p2;
+    delete p3;
 }

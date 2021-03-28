@@ -52,8 +52,8 @@ bool Board::move(int column) {
     // start with a column
     Column* myCol = backBone[column];
 
-    // return false immediately if captured
-    if(myCol->state() == captured) {
+    // return false immediately if captured or pending
+    if(myCol->state() == captured || myCol->state() == pending) {
         return false;
     }
 
