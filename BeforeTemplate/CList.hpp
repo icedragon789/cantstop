@@ -1,6 +1,8 @@
-//
-// Created by BPlaz on 3/25/2021.
-//
+
+// CSCI 4526 - Dr Alice Fischer
+// Purpose of program is to incorporate a circular linked list for Players
+// NOT TEMPLATE
+// Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
 #ifndef MAIN_CPP_CLIST_HPP
 #define MAIN_CPP_CLIST_HPP
@@ -11,22 +13,21 @@
 #include "Player.hpp"
 
 
-class CList; // forward declaration of it here
-//template <class Item> class CList;
+typedef Player* Item;
 
 
-//template <class Item>
 class Cell {
 private: // all servant members will be private
-    Player* myItem; // hold the data
+    Item myItem; // hold the data
     Cell* next; // form the linked list
-    Cell(Player* data, Cell* reference): myItem(data), next(reference) {
+    Cell(Item data, Cell* reference): myItem(data), next(reference) {
         reference=nullptr;
     };
     ~Cell() { delete myItem; }
 
     friend class CList; // gives friendship to CList
 };
+
 
 class CList {
 private:
@@ -36,19 +37,17 @@ private:
 
 public:
     CList() { headPtr = nullptr; }; // constructor initializes the list to empty
-    ~CList() { delete headPtr; }; // destructor deletes all cells in list
+    ~CList(); // destructor deletes all cells in list
     int count() {return counter;}; // returns # items in list
     bool empty() { // return true if 0 Items and false otherwise
         if (counter == 0) return true;
         else return false;
     }
     ostream& print(ostream& os) const;
-    void addItem(Player* p); // insert a new Player inside new Cell into CList
+    void addItem(Item p); // insert a new Player inside new Cell into CList
     void init(); // set current item pointer to the first cell in the CList
-    Player* next(); // move current item pointer to next cell in list
+    Item next(); // move current item pointer to next cell in list
     void remove(); // removes the current Item and Cell from list delete both
-
-
 
 };
 

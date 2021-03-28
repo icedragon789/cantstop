@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/P2_Placzek.dir/Board.cpp.o"
-  "CMakeFiles/P2_Placzek.dir/CList.cpp.o"
+  "CMakeFiles/P2_Placzek.dir/CListT.cpp.o"
   "CMakeFiles/P2_Placzek.dir/Column.cpp.o"
   "CMakeFiles/P2_Placzek.dir/Dice.cpp.o"
   "CMakeFiles/P2_Placzek.dir/Game.cpp.o"

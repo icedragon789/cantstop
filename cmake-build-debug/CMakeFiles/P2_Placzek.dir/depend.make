@@ -8,11 +8,11 @@ CMakeFiles/P2_Placzek.dir/Board.cpp.o: ../Player.hpp
 CMakeFiles/P2_Placzek.dir/Board.cpp.o: ../enums.hpp
 CMakeFiles/P2_Placzek.dir/Board.cpp.o: ../tools.hpp
 
-CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../CList.cpp
-CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../CList.hpp
-CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../Player.hpp
-CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../enums.hpp
-CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../tools.hpp
+CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../CListT.cpp
+CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../CListT.hpp
+CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../Player.hpp
+CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../enums.hpp
+CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../tools.hpp
 
 CMakeFiles/P2_Placzek.dir/Column.cpp.o: ../Column.cpp
 CMakeFiles/P2_Placzek.dir/Column.cpp.o: ../Column.hpp
@@ -41,7 +41,7 @@ CMakeFiles/P2_Placzek.dir/Player.cpp.o: ../tools.hpp
 CMakeFiles/P2_Placzek.dir/enums.cpp.o: ../enums.cpp
 CMakeFiles/P2_Placzek.dir/enums.cpp.o: ../tools.hpp
 
-CMakeFiles/P2_Placzek.dir/main.cpp.o: ../CList.hpp
+CMakeFiles/P2_Placzek.dir/main.cpp.o: ../CListT.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../Player.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../enums.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../main.cpp

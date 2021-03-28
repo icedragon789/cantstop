@@ -1,24 +1,35 @@
-//
-// Created by BPlaz on 3/25/2021.
-//
+
+// CSCI 4526 - Dr Alice Fischer
+// Purpose of program is to incorporate a circular linked list for Players
+// Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
 #include "CList.hpp"
+
+CList::~CList() {
+    // delete all cells in list
+    while(headPtr != nullptr) {
+        Cell* temp = headPtr->next;
+        delete headPtr;
+        headPtr = temp;
+    }
+}
 
 ostream &CList::print(ostream &os) const {
     Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
-            cout << *temp->myItem << " ";
+            os << *temp->myItem;
             temp = temp->next;
         } while (temp != headPtr);
-        cout << endl;
+        os << endl;
     } else {
-        cout << "List empty";
+        os << "List empty";
     }
+    return os;
 }
 
 // insert a new Player inside new Cell into CList
-void CList::addItem(Player* p){
+void CList::addItem(Item p){
     Cell* temp = headPtr;
     Cell* myInsert = new Cell(p, temp);
 
@@ -39,13 +50,12 @@ void CList::addItem(Player* p){
 
 // set current item pointer to the first cell in the CList
 void CList::init() {
-    cout << "CURRENT INITIALIZED TO " << *headPtr->myItem << endl;
     if(headPtr != NULL) current = headPtr; // appropriate behavior for empty list
     else current = nullptr;
 }
 
 // move current item pointer to next cell in list
-Player* CList::next() {
+Item CList::next() {
     if (headPtr != nullptr) {
         current = current->next; // move current to next in list
     }
@@ -58,32 +68,31 @@ Player* CList::next() {
 
 // removes the current Item and Cell from list delete both
 void CList::remove(){
+
     // if list empty
     if(headPtr == nullptr) return;
     // list contains one cell
     if(headPtr->next == headPtr) {
         headPtr = nullptr;
+        counter--;
         return;
     }
+
     Cell *last = headPtr;
     Cell *d = headPtr;
 
-    cout << "CURRENT IS " << *current->myItem << endl;
-
     // if current is the head
     if(headPtr->myItem == current->myItem) {
-        cout << "REMOVING HEAD " << endl;
         while(last->next != headPtr) last = last->next; // find last
-
         // point last node to next of head
-        last = headPtr->next;
-        delete headPtr;
-        headPtr = last;
+        last->next = headPtr->next;
+        headPtr = last->next;
+        current = headPtr;
         counter--;
     }
 
+        // any other cases
     else {
-
         // end of list reached or current not in list
         while (last->next != headPtr && last->next->myItem != current->myItem) {
             last = last->next;
@@ -104,5 +113,4 @@ void CList::remove(){
             }
         }
     }
-
 }

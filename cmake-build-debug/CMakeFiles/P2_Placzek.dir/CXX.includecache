@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.cpp
-CList.hpp
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.hpp
-
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CListT.hpp
 tools.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/tools.hpp
 Player.hpp
@@ -23,6 +19,10 @@ enums.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/enums.hpp
 tools.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/tools.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/main.cpp
+CListT.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CListT.hpp
 
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/tools.hpp
 iostream
