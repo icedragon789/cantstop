@@ -3,7 +3,7 @@
 // Purpose of program is to incorporate a circular linked list for Players
 // Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
-#include "CListNT.hpp"
+#include "CList.hpp"
 
 CListNT::~CListNT() {
     // delete all cells in list

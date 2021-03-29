@@ -4,9 +4,9 @@
 // TEMPLATE
 // Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
-#include "CList.hpp"
+#include "CListT.hpp"
 
-template <class T> class CList;
+template <class T> class CListT;
 
 // Operator overload to call print statement for clist object
 //template <class T>
@@ -15,7 +15,7 @@ template <class T> class CList;
 //}
 
 template <>
-CList<Player*>::~CList() {
+CListT<Player*>::~CListT() {
     while(headPtr != nullptr) {
         Cell* temp = headPtr->next;
         delete headPtr;
@@ -24,7 +24,7 @@ CList<Player*>::~CList() {
 }
 
 template <class T>
-ostream &CList<T>::print(ostream &os) const {
+ostream &CListT<T>::print(ostream &os) const {
     Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
@@ -40,7 +40,7 @@ ostream &CList<T>::print(ostream &os) const {
 
 // insert a new Player inside new Cell into CListNT
 template <class T>
-void CList<T>::addItem(T p){
+void CListT<T>::addItem(T p){
     Cell* temp = headPtr;
     Cell* myInsert = new Cell(p, temp);
 
@@ -61,14 +61,14 @@ void CList<T>::addItem(T p){
 
 // set current item pointer to the first cell in the CListNT
 template <class T>
-void CList<T>::init() {
+void CListT<T>::init() {
     if(headPtr != NULL) current = headPtr; // appropriate behavior for empty list
     else current = nullptr;
 }
 
 // move current item pointer to next cell in list
 template <class T>
-T CList<T>::next() {
+T CListT<T>::next() {
     if (headPtr != nullptr) {
         current = current->next; // move current to next in list
     }
@@ -81,7 +81,7 @@ T CList<T>::next() {
 
 // removes the current Item and Cell from list delete both
 template <class T>
-void CList<T>::remove(){
+void CListT<T>::remove(){
 
     // if list empty
     if(headPtr == nullptr) return;

@@ -4,13 +4,13 @@
 // Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
 
-#include "CList.hpp"
+#include "CListT.hpp"
 
 //void unitTest(CListNT<Player> c);
 
 int main() {
     banner();
-    CList<Player*> c;
+    CListT<Player*> c;
     Player* p1 = new Player("Ben", blue);
     c.addItem(p1);
 
