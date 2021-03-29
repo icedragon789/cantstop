@@ -181,18 +181,18 @@ CMakeFiles/P2_Placzek.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_Placzek.dir/Board.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/Board.cpp" -o CMakeFiles/P2_Placzek.dir/Board.cpp.s
 
-CMakeFiles/P2_Placzek.dir/CListT.cpp.o: CMakeFiles/P2_Placzek.dir/flags.make
-CMakeFiles/P2_Placzek.dir/CListT.cpp.o: ../CListT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/P2_Placzek.dir/CListT.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P2_Placzek.dir/CListT.cpp.o -c "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CListT.cpp"
+CMakeFiles/P2_Placzek.dir/CList.cpp.o: CMakeFiles/P2_Placzek.dir/flags.make
+CMakeFiles/P2_Placzek.dir/CList.cpp.o: ../CList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/P2_Placzek.dir/CList.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P2_Placzek.dir/CList.cpp.o -c "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.cpp"
 
-CMakeFiles/P2_Placzek.dir/CListT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_Placzek.dir/CListT.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CListT.cpp" > CMakeFiles/P2_Placzek.dir/CListT.cpp.i
+CMakeFiles/P2_Placzek.dir/CList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_Placzek.dir/CList.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.cpp" > CMakeFiles/P2_Placzek.dir/CList.cpp.i
 
-CMakeFiles/P2_Placzek.dir/CListT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_Placzek.dir/CListT.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CListT.cpp" -o CMakeFiles/P2_Placzek.dir/CListT.cpp.s
+CMakeFiles/P2_Placzek.dir/CList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_Placzek.dir/CList.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/CList.cpp" -o CMakeFiles/P2_Placzek.dir/CList.cpp.s
 
 # Object files for target P2_Placzek
 P2_Placzek_OBJECTS = \
@@ -204,7 +204,7 @@ P2_Placzek_OBJECTS = \
 "CMakeFiles/P2_Placzek.dir/Game.cpp.o" \
 "CMakeFiles/P2_Placzek.dir/Dice.cpp.o" \
 "CMakeFiles/P2_Placzek.dir/Board.cpp.o" \
-"CMakeFiles/P2_Placzek.dir/CListT.cpp.o"
+"CMakeFiles/P2_Placzek.dir/CList.cpp.o"
 
 # External object files for target P2_Placzek
 P2_Placzek_EXTERNAL_OBJECTS =
@@ -217,7 +217,7 @@ P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/enums.cpp.o
 P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/Game.cpp.o
 P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/Dice.cpp.o
 P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/Board.cpp.o
-P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/CListT.cpp.o
+P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/CList.cpp.o
 P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/build.make
 P2_Placzek.exe: CMakeFiles/P2_Placzek.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable P2_Placzek.exe"

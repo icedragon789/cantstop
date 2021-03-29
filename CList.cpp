@@ -1,12 +1,21 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to incorporate a circular linked list for Players
+// TEMPLATE
 // Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
 #include "CList.hpp"
 
-CList::~CList() {
-    // delete all cells in list
+template <class T> class CList;
+
+// Operator overload to call print statement for clist object
+//template <class T>
+//inline ostream& operator <<( ostream& os, CListNT<T>& myCList) {
+//    return myCList.print(os);
+//}
+
+template <>
+CList<Player*>::~CList() {
     while(headPtr != nullptr) {
         Cell* temp = headPtr->next;
         delete headPtr;
@@ -14,7 +23,8 @@ CList::~CList() {
     }
 }
 
-ostream &CList::print(ostream &os) const {
+template <class T>
+ostream &CList<T>::print(ostream &os) const {
     Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
@@ -28,8 +38,9 @@ ostream &CList::print(ostream &os) const {
     return os;
 }
 
-// insert a new Player inside new Cell into CList
-void CList::addItem(Item p){
+// insert a new Player inside new Cell into CListNT
+template <class T>
+void CList<T>::addItem(T p){
     Cell* temp = headPtr;
     Cell* myInsert = new Cell(p, temp);
 
@@ -48,14 +59,16 @@ void CList::addItem(Item p){
     counter++;
 }
 
-// set current item pointer to the first cell in the CList
-void CList::init() {
+// set current item pointer to the first cell in the CListNT
+template <class T>
+void CList<T>::init() {
     if(headPtr != NULL) current = headPtr; // appropriate behavior for empty list
     else current = nullptr;
 }
 
 // move current item pointer to next cell in list
-Item CList::next() {
+template <class T>
+T CList<T>::next() {
     if (headPtr != nullptr) {
         current = current->next; // move current to next in list
     }
@@ -67,7 +80,8 @@ Item CList::next() {
 }
 
 // removes the current Item and Cell from list delete both
-void CList::remove(){
+template <class T>
+void CList<T>::remove(){
 
     // if list empty
     if(headPtr == nullptr) return;

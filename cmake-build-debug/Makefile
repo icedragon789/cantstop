@@ -170,32 +170,32 @@ Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
-CListT.o: CListT.cpp.o
+CList.o: CList.cpp.o
 
-.PHONY : CListT.o
+.PHONY : CList.o
 
 # target to build an object file
-CListT.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.o
-.PHONY : CListT.cpp.o
+CList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.o
+.PHONY : CList.cpp.o
 
-CListT.i: CListT.cpp.i
+CList.i: CList.cpp.i
 
-.PHONY : CListT.i
+.PHONY : CList.i
 
 # target to preprocess a source file
-CListT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.i
-.PHONY : CListT.cpp.i
+CList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.i
+.PHONY : CList.cpp.i
 
-CListT.s: CListT.cpp.s
+CList.s: CList.cpp.s
 
-.PHONY : CListT.s
+.PHONY : CList.s
 
 # target to generate assembly for a file
-CListT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.s
-.PHONY : CListT.cpp.s
+CList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.s
+.PHONY : CList.cpp.s
 
 Column.o: Column.cpp.o
 
@@ -398,9 +398,9 @@ help:
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
-	@echo "... CListT.o"
-	@echo "... CListT.i"
-	@echo "... CListT.s"
+	@echo "... CList.o"
+	@echo "... CList.i"
+	@echo "... CList.s"
 	@echo "... Column.o"
 	@echo "... Column.i"
 	@echo "... Column.s"

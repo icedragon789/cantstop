@@ -1,24 +1,21 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to incorporate a circular linked list for Players
-// TEMPLATE
 // Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
 
-#include "CListT.hpp"
+#include "CListNT.hpp"
 
-template <class T>
-CList<T>::~CList() {
+CList::~CList() {
     // delete all cells in list
     while(headPtr != nullptr) {
-        Cell<T>* temp = headPtr->next;
+        Cell* temp = headPtr->next;
         delete headPtr;
         headPtr = temp;
     }
 }
 
-template <class T>
-ostream &CList<T>::print(ostream &os) const {
-    Cell<T> *temp = headPtr;
+ostream &CList::print(ostream &os) const {
+    Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
             os << *temp->myItem;
@@ -32,10 +29,9 @@ ostream &CList<T>::print(ostream &os) const {
 }
 
 // insert a new Player inside new Cell into CList
-template <class T>
-void CList<T>::addItem(T p){
-    Cell<T>* temp = headPtr;
-    Cell<T>* myInsert = new Cell<T>(p, temp);
+void CList::addItem(Item p){
+    Cell* temp = headPtr;
+    Cell* myInsert = new Cell(p, temp);
 
     myInsert->myItem = p; // assign player data
     myInsert->next = headPtr; // circular in nature
@@ -53,15 +49,13 @@ void CList<T>::addItem(T p){
 }
 
 // set current item pointer to the first cell in the CList
-template <class T>
-void CList<T>::init() {
+void CList::init() {
     if(headPtr != NULL) current = headPtr; // appropriate behavior for empty list
     else current = nullptr;
 }
 
 // move current item pointer to next cell in list
-template <class T>
-T CList<T>::next() {
+Item CList::next() {
     if (headPtr != nullptr) {
         current = current->next; // move current to next in list
     }
@@ -73,8 +67,7 @@ T CList<T>::next() {
 }
 
 // removes the current Item and Cell from list delete both
-template <class T>
-void CList<T>::remove(){
+void CList::remove(){
 
     // if list empty
     if(headPtr == nullptr) return;
@@ -85,8 +78,8 @@ void CList<T>::remove(){
         return;
     }
 
-    Cell<T> *last = headPtr;
-    Cell<T> *d = headPtr;
+    Cell *last = headPtr;
+    Cell *d = headPtr;
 
     // if current is the head
     if(headPtr->myItem == current->myItem) {
