@@ -5,7 +5,7 @@
 
 #include "CListNT.hpp"
 
-CList::~CList() {
+CListNT::~CListNT() {
     // delete all cells in list
     while(headPtr != nullptr) {
         Cell* temp = headPtr->next;
@@ -14,7 +14,7 @@ CList::~CList() {
     }
 }
 
-ostream &CList::print(ostream &os) const {
+ostream &CListNT::print(ostream &os) const {
     Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
@@ -29,7 +29,7 @@ ostream &CList::print(ostream &os) const {
 }
 
 // insert a new Player inside new Cell into CList
-void CList::addItem(Item p){
+void CListNT::addItem(Item p){
     Cell* temp = headPtr;
     Cell* myInsert = new Cell(p, temp);
 
