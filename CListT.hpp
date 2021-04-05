@@ -12,7 +12,6 @@
 
 typedef Player* Item;
 
-
 template <class T>
 class CListT {
 private:
@@ -39,16 +38,19 @@ public:
         else return false;
     }
     ostream& print(ostream& os) const;
-    void addItem(T p); // insert a new Player inside new Cell into CListT
+    void addItem(Item *p); // insert a new Player inside new Cell into CListT
     void init(); // set current item pointer to the first cell in the CListT
-    T next(); // move current item pointer to next cell in list
+    Item* next(); // move current item pointer to next cell in list
     void remove(); // removes the current Item and Cell from list delete both
 };
 
+// Operator overload to call print statement for clist object
 template <class T>
-inline ostream& operator<<(ostream& os, CListT<T> c) {
-    return c.print(os);
+inline ostream& operator  <<( ostream& os, CListT<Player*>& myCList) {
+    return myCList.print(os);
 }
+
+
 
 
 #endif //MAIN_CPP_CListT_HPP
