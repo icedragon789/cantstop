@@ -5,7 +5,7 @@
 #include "tools.hpp"
 
 // padded strings to reduce the fuss necessary to make neat lists of players
-extern const string colors[6] = {"orange","yellow","green ","blue  ", "white ", "ERR   "};
+extern const string colors[6] = {"white ", "orange","yellow","green ","blue  ", "ERR   "};
 
 extern const string colStates [3] = {"available", "pending  ", "captured "};
 

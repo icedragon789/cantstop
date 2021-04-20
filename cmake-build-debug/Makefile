@@ -68,10 +68,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P7-Placzek/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,33 @@ P2_Placzek/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/build
 .PHONY : P2_Placzek/fast
 
+BadPlayer.o: BadPlayer.cpp.o
+
+.PHONY : BadPlayer.o
+
+# target to build an object file
+BadPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.o
+.PHONY : BadPlayer.cpp.o
+
+BadPlayer.i: BadPlayer.cpp.i
+
+.PHONY : BadPlayer.i
+
+# target to preprocess a source file
+BadPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.i
+.PHONY : BadPlayer.cpp.i
+
+BadPlayer.s: BadPlayer.cpp.s
+
+.PHONY : BadPlayer.s
+
+# target to generate assembly for a file
+BadPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.s
+.PHONY : BadPlayer.cpp.s
+
 Board.o: Board.cpp.o
 
 .PHONY : Board.o
@@ -170,32 +197,32 @@ Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
-CListT.o: CListT.cpp.o
+CList.o: CList.cpp.o
 
-.PHONY : CListT.o
+.PHONY : CList.o
 
 # target to build an object file
-CListT.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.o
-.PHONY : CListT.cpp.o
+CList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.o
+.PHONY : CList.cpp.o
 
-CListT.i: CListT.cpp.i
+CList.i: CList.cpp.i
 
-.PHONY : CListT.i
+.PHONY : CList.i
 
 # target to preprocess a source file
-CListT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.i
-.PHONY : CListT.cpp.i
+CList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.i
+.PHONY : CList.cpp.i
 
-CListT.s: CListT.cpp.s
+CList.s: CList.cpp.s
 
-.PHONY : CListT.s
+.PHONY : CList.s
 
 # target to generate assembly for a file
-CListT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CListT.cpp.s
-.PHONY : CListT.cpp.s
+CList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2_Placzek.dir/build.make CMakeFiles/P2_Placzek.dir/CList.cpp.s
+.PHONY : CList.cpp.s
 
 Column.o: Column.cpp.o
 
@@ -395,12 +422,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... P2_Placzek"
+	@echo "... BadPlayer.o"
+	@echo "... BadPlayer.i"
+	@echo "... BadPlayer.s"
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
-	@echo "... CListT.o"
-	@echo "... CListT.i"
-	@echo "... CListT.s"
+	@echo "... CList.o"
+	@echo "... CList.i"
+	@echo "... CList.s"
 	@echo "... Column.o"
 	@echo "... Column.i"
 	@echo "... Column.s"

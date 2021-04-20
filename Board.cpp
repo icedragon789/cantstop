@@ -1,7 +1,7 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to create a Board that is populated with Columns
-// Created by Ben Placzek on 2/24/2021. Revised 3/1/2021
+// Created by Ben Placzek on 2/24/2021.  Revised 4/5/2021
 
 #include "Board.hpp"
 
@@ -44,11 +44,38 @@ void Board::startTurn(Player *p) {
     // set tower counter and populated columns to zero
     towerCounter=0;
     for (int j = 0; j < 3; j++){
-        populatedCols[j] = 0;
+        towerCols[j] = 0;
     }
+
+    pickup();
+
+}
+
+// private function called by move to pickup a players progress
+void Board::pickup() {
+
+//    cout << "CALLING PICKUP" << endl;
+
+    // places a "tower" where our colored pieces are placed
+    for (int j =2; j<13; j++) {
+        if(backBone[j]->getColPos(currentPlayer->getColor()) != 0) {
+            towerCols[towerCounter] = j;
+            towerCounter+=1;
+
+        }
+    }
+
+//    cout << "FROM PICKUP TOWER COUNTER: " << towerCounter << endl;
+//    cout << "FROM PICKUP POPULATED COLS : " << endl;
+//    for (int j = 0; j<3; j++) {
+//        cout << towerCols[j] << " ";
+//    }
+//    cout << endl;
+
 }
 
 bool Board::move(int column) {
+
     // start with a column
     Column* myCol = backBone[column];
 
@@ -61,29 +88,35 @@ bool Board::move(int column) {
     // the column that has a tower
     bool towerInColumn = false;
 
-
-    // initial tower placement
-    for(int j =0; j<3; j++) {
-        if (populatedCols[0] == 0) {
-            populatedCols[0] = column;
-            towerInColumn = true;
-        }
-        else if (populatedCols[j] == column) {
-            towerInColumn = true;
-            break;
+    // if there isnt a tower placed already
+    if (towerCols[0] == 0) {
+        towerCols[0] = column;
+        towerInColumn = true;
+    }
+        // if there is already a tower placed
+    else {
+        // initial tower placement
+        for (int j = 0; j < 3; j++) {
+            if (towerCols[j] == column) { // column for tower to be placed in already has tower
+                towerInColumn = true;
+                break;
+            }
         }
     }
-    cout << "TOWER IN COLUMN? " << towerInColumn << endl;
 
-    if (!towerInColumn) populatedCols[++towerCounter] = column;
+//    cout << "TOWER IN COLUMN: " << towerInColumn << endl;
 
+    if (!towerInColumn) towerCols[++towerCounter] = column;
+
+//    cout << "POPULATED COLS AT " << towerCounter << " NOW HAS " << column << endl;
+//    cout << "TOWER COUNTER: " << towerCounter << endl;
 
     // if we are out of towers return false
     if(towerCounter >= 3 && towerInColumn == false) {
         return false;
     }
 
-    // place a tower in nexzt available slot in the column
+    // place a tower in next available slot in the column
     if(myCol->startTower(currentPlayer)) myCol->move();
 
     cout << endl;
@@ -96,17 +129,16 @@ void Board::stop() {
     // replace all towers by tiles of the correct color
     // use the tower array to decide which columns should be stopped
     for (int j =0; j<3; j++) {
-        cout << "POPULATED COLS AT " << j << " IS: " << populatedCols[j] << endl;
-        if(populatedCols[j] != 0) {
-            backBone[populatedCols[j]]->stop(currentPlayer);
+        if(towerCols[j] != 0) {
+            backBone[towerCols[j]]->stop(currentPlayer);
         }
     }
 }
 
 void Board::bust() {
     for (int j =0; j<3; j++) {
-        if(populatedCols[j] != 0) {
-            backBone[populatedCols[j]]->bust();
+        if(towerCols[j] != 0) {
+            backBone[towerCols[j]]->bust();
         }
     }
 }

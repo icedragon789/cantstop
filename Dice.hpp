@@ -1,9 +1,16 @@
 
+// CSCI 4478 - Dr Alice Fischer
+// Purpose of program is to set up CantStop Dice and FakeDice.
+// Created by Ben Placzek on 1/31/2021.  Revised 4/5/2021
+
 #include "tools.hpp"
 
-// CSCI 4478 - Dr Alice Fischer
-// Purpose of program is to roll a number of dice, and write the results to file.
-// Created by Ben Placzek on 1/31/2021.
+// please uncomment for each test
+//#define myTestFile "../test1.txt"
+//#define myTestFile "../test2.txt"
+#define myTestFile "../test3.txt"
+
+extern const char letters[];
 
 #ifndef INC_1_DICE_DICE_H
 #define INC_1_DICE_DICE_H
@@ -11,7 +18,7 @@
 
 class Dice {
 
-private:
+protected:
     //Number of dice in the set
     int nDice;
     //Dynamically allocated array of nDice pseudo-random values
@@ -19,9 +26,9 @@ private:
 public:
     // Constructor and Destructor
     Dice(int n);
-    ~Dice(){delete[] randArray;  };
+    virtual ~Dice(){ delete[] randArray;  };
 
-    const int* roll();
+    virtual const int* roll();
     ostream& print(ostream& os) const;
 
 };
@@ -30,5 +37,27 @@ public:
 inline ostream& operator <<( ostream& os, Dice& myDice) {
     return myDice.print(os);
 }
+
+// Derived class
+class CantStopDice: public Dice {
+
+protected:
+    int diceTot[2]; // stores totals of dice pairs
+public:
+    CantStopDice(): Dice(4) {}; // creates 4 six sided dice
+    ~CantStopDice()=default;
+    virtual const int* roll(); // derived from Dice
+
+};
+
+// Derived from CantStopDice
+class FakeDice: public CantStopDice {
+private:
+    ifstream myStream;
+public:
+    FakeDice() { myStream.open (myTestFile, std::ifstream::in); }; // open stream
+    ~FakeDice()=default; // close stream
+    const int* roll(); // derived from CantStopDice
+};
 
 #endif //INC_1_DICE_DICE_H

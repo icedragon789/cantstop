@@ -10,10 +10,11 @@
 
 class Board {
 private:
-    int towerCounter;    // number of towers that are in use
-    int populatedCols[3];    //  which columns contain towers
-    Column* backBone[13];     // column pointer array
+    int towerCounter;        // number of towers that are in use
+    int towerCols[3];        //  which columns contain towers
+    Column* backBone[13];    // column pointer array
     Player* currentPlayer;
+    void pickup();
 public:
     Board();
     ~Board();

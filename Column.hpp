@@ -43,6 +43,7 @@ public:
     bool startTower(Player* p); // placing a new tower and moving it one square forward
     bool move(); //advance the tower one square in the column
     void stop(Player* p); // a player decides to end turn
+    int getColPos(int pos) { return colPositions[pos]; } // returns the spot of a colored tile in a column
     void bust();
 
 };

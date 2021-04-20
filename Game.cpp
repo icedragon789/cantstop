@@ -1,16 +1,19 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to start a game and create game flow
-// Created by Ben Placzek on 2/24/2021. Revised 3/16/2021.
+// Created by Ben Placzek on 2/24/2021.  Revised 4/5/2021
 
 #include "Game.hpp"
 
 Game::Game() {
 
     // create dice to be used
-    myDie = new Dice(4);
+    myDie = new CantStopDice(); // using normal cantstop dice
+//    myDie = new FakeDice(); // using fakedice from a file
 
     myBoard = new Board();
+
+    myPlayer = getNewPlayer(); // user input a player to use
 
 }
 
@@ -51,21 +54,22 @@ Player* Game::getNewPlayer() {
 
 int Game::oneTurn (Player *pp) {
 
-    cout << "Begin One Turn" << endl;
     // start the players turn on the board
     myBoard->startTurn(pp);
+    cout << "----------------------------------------------------------\n" <<
+         "Beginning of Turn for " << colors[pp->getColor()] << " player." <<
+         "\n----------------------------------------------------------\n";
     for ( ; ; ) {
-
-    cout << *myBoard << endl;
+        cout << *myBoard << endl;
 
     // player won
         if(pp->score() == 3) {
-            cout << pp->getColor() << " Player Won!" << endl;
+            cout << " Player " << colors[pp->getColor()] << " Won!" << endl;
             return 1;
         }
 
         cout << "----------------------------------------------------------\n" <<
-             "Beginning of Turn for " << colors[pp->getColor()] << " player." <<
+             "Player " << colors[pp->getColor()] << ", make a selection." <<
              "\n----------------------------------------------------------\n";
         cout << "1 - Roll\n";
         cout << "2 - Stop\n";
@@ -75,88 +79,45 @@ int Game::oneTurn (Player *pp) {
         cin >> myAction;
 
         const int* diceList;
-        bool usedDice[4] = {false}; // bit array to track chosen dice
-        char firstInput;
-        char secondInput;
-        int firstSum = 0; // sum of the dice first chosen by the user
-        int secondSum = 0; // sum of the dice not chosen by the user
-
 
         switch (myAction) {
             case 1: { // roll
-                    cout << *myBoard << endl;
                     // roll dice to generate random values
                     diceList = myDie->roll(); // assign the result const int*  result to an array
 
-                    // print out options with letter assignments
-                    for (int j = 0; j < 4; j++) {
-                        cout << letters[j] << "\t" << diceList[j] << " " << endl;
+                    if (diceList[0] == 0)  {
+                        myBoard->stop();
+                        return 0;
                     }
-
-                    // loop for entering dice selections
-                    for (;;) {
-                        cout << "Enter two letters, each of which correspond to a dice." << endl;
-                        cin >> firstInput >> secondInput;
-                        firstInput = toupper(firstInput);
-                        secondInput = toupper(secondInput);
-
-                        // implicit ASCII conversion for input validation
-                        if (firstInput == secondInput) {
-                            cout << "Your inputs cannot be the same, try again. " << endl;
-                            continue;
-                        }
-                        //error handling
-                        if ((firstInput > 64 && firstInput < 69) && (secondInput > 64 && secondInput < 69)) {
-                            break;
-                        } else {
-                            cout << "Invalid input, try again. " << endl;
-                            continue;
-                        }
-                    }
-
-                    // assign bit array values that were selected by user
-                    usedDice[firstInput - 65] = true;
-                    usedDice[secondInput - 65] = true;
-
-                    // first sum gets the dice rolls that the user chose
-                    firstSum = diceList[firstInput - 65] + diceList[secondInput - 65];
-                    // find the leftovers for the second sum
-                    for (int j = 0; j < 4; j++) {
-                        if (!usedDice[j]) {
-                            secondSum += diceList[j]; // increment sum by leftover dice roll
-                        }
-                    }
-
-                    cout << "You rolled sums of " << firstSum <<" and " << secondSum << endl;
-
 
                     // bust if cannot move here
-                    if (!myBoard->move(firstSum)) {
+                    if (!myBoard->move(diceList[0])) {
                         cout << "BUST ! ! ! " << endl;
                         myBoard->bust();
-                        break;
+                        return 0; // hand it back to any other players
                     }
                     // bust if cannot move here
-                    myBoard->move(secondSum);
+                    myBoard->move(diceList[1]);
                     break;
             }
 
             case 2: // stop
 
                 myBoard->stop();
-                continue;
+                return 0; // hand it back to any other players
             case 3: // TODO: resign
                 bye();
-                return 0;
+                return 1;
             default:
                 cout << "Invalid input, try again." << endl;
                 continue;
         }
-//    break;
-
     }
+}
 
-//    return 0;
-
+void Game::runGame() {
+    for(;;) {
+        if(oneTurn(myPlayer)) break;
+    }
 }
 

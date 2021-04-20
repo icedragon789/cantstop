@@ -1,0 +1,126 @@
+--------------------------------------------------------
+	Ben Placzek
+	CS 6626
+	Mon Apr  5 2021	00:31:23
+----------------------------------------------------------
+Start Turn
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Beginning of Turn for blue   player.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	5 
+B	6 
+C	6 
+D	5 
+Enter two letters, each of which correspond to a dice.
+A
+B
+You rolled sums of 11 and 11
+
+
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | T---- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Beginning of Turn for blue   player.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	5 
+B	2 
+C	2 
+D	5 
+Enter two letters, each of which correspond to a dice.
+A
+B
+You rolled sums of 7 and 7
+
+
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | T---- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Beginning of Turn for blue   player.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	5 
+B	1 
+C	5 
+D	5 
+Enter two letters, each of which correspond to a dice.
+A
+B
+You rolled sums of 6 and 10
+
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | T---- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Beginning of Turn for blue   player.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	5 
+B	5 
+C	1 
+D	1 
+Enter two letters, each of which correspond to a dice.
+A
+B
+You rolled sums of 10 and 2
+BUST ! ! ! 
+
+Process finished with exit code 0

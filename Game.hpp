@@ -29,6 +29,7 @@ public:
     ~Game(); // free memory
     Player* getNewPlayer(); // input player data from keyboard
     int oneTurn (Player* pp);
+    void runGame();
 
 };
 

@@ -35,13 +35,16 @@ bool Column::startTower(Player* p) {
 
 //     return false if tower place is illegal
     if (myState == captured || myState == pending) return false;
-    cout << "COL POSITIONS SET TO " << colPositions[p->getColor()];
-    colPositions[0] = colPositions[p->getColor()]; // pick up where we left off
 
-// player has no tower in column
-    if (colPositions[p->getColor()] == 0) {
-        colPositions[0] = 0; // place tower at position 0 and return
+    // player has no tower in column
+    if (colPositions[p->getColor()] == 0 && colPositions[0] == 0) {
+        colPositions[0] = 0;
+        return true;
     }
+    else {
+        colPositions[0] = colPositions[p->getColor()]; // place tower square after colored tile
+    }
+
 
 // return true if successfully places a tower
     return true;
@@ -50,7 +53,7 @@ bool Column::startTower(Player* p) {
 //advance the tower one square in the column
 bool Column::move() {
     // move forward one
-    colPositions[0]++;
+    colPositions[0]+=1;
     if (colPositions[0] == isPending) myState = pending;
 
     // illegal move
@@ -63,7 +66,6 @@ bool Column::move() {
 // a player decides to end turn
 void Column::stop(Player* p) {
     // set our necessary color to wherever the tower was able to get to
-    cout << "Setting colPositions at " << p->getColor() << " to " << colPositions[0] << endl;
     // this gets set as long as there was a tower this turn
     if(colPositions[0] != 0) colPositions[p->getColor()]  = colPositions[0];
     // set the tower back to the beginning
@@ -71,6 +73,7 @@ void Column::stop(Player* p) {
 
     // set pending to captured
     if(myState == pending) {
+        p->wonColumn(colPositions[p->getColor()]); // win this column
         myState = captured;
     }
 }
