@@ -22,6 +22,7 @@ public:
     ~Player()=default;
 
     colorEnum getColor()  { return color;}
+    string getName()  { return name;}
     int score()  { return numCols; }
     // returns true if player wins 3 columns, false otherwise
     bool wonColumn (int colNum);

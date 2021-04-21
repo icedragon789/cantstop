@@ -4,6 +4,7 @@
 CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.o
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.cpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 CMakeFiles/P2_Placzek.dir/Board.cpp.o
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.cpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
@@ -24,11 +25,14 @@ CMakeFiles/P2_Placzek.dir/Column.cpp.o
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/enums.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 CMakeFiles/P2_Placzek.dir/Dice.cpp.o
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.cpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 CMakeFiles/P2_Placzek.dir/Game.cpp.o
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/CList.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Column.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.cpp
@@ -45,7 +49,9 @@ CMakeFiles/P2_Placzek.dir/enums.cpp.o
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/enums.cpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
+ /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/CList.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Column.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
  /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.hpp

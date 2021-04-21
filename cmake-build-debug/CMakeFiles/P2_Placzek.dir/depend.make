@@ -3,6 +3,7 @@
 
 CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.o: ../BadPlayer.cpp
 CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.o: ../BadPlayer.hpp
+CMakeFiles/P2_Placzek.dir/BadPlayer.cpp.o: ../tools.hpp
 
 CMakeFiles/P2_Placzek.dir/Board.cpp.o: ../Board.cpp
 CMakeFiles/P2_Placzek.dir/Board.cpp.o: ../Board.hpp
@@ -23,11 +24,14 @@ CMakeFiles/P2_Placzek.dir/Column.cpp.o: ../Player.hpp
 CMakeFiles/P2_Placzek.dir/Column.cpp.o: ../enums.hpp
 CMakeFiles/P2_Placzek.dir/Column.cpp.o: ../tools.hpp
 
+CMakeFiles/P2_Placzek.dir/Dice.cpp.o: ../BadPlayer.hpp
 CMakeFiles/P2_Placzek.dir/Dice.cpp.o: ../Dice.cpp
 CMakeFiles/P2_Placzek.dir/Dice.cpp.o: ../Dice.hpp
 CMakeFiles/P2_Placzek.dir/Dice.cpp.o: ../tools.hpp
 
+CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../BadPlayer.hpp
 CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../Board.hpp
+CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../CList.hpp
 CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../Column.hpp
 CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../Dice.hpp
 CMakeFiles/P2_Placzek.dir/Game.cpp.o: ../Game.cpp
@@ -44,7 +48,9 @@ CMakeFiles/P2_Placzek.dir/Player.cpp.o: ../tools.hpp
 CMakeFiles/P2_Placzek.dir/enums.cpp.o: ../enums.cpp
 CMakeFiles/P2_Placzek.dir/enums.cpp.o: ../tools.hpp
 
+CMakeFiles/P2_Placzek.dir/main.cpp.o: ../BadPlayer.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../Board.hpp
+CMakeFiles/P2_Placzek.dir/main.cpp.o: ../CList.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../Column.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../Dice.hpp
 CMakeFiles/P2_Placzek.dir/main.cpp.o: ../Game.hpp

@@ -11,6 +11,8 @@
 #include "Player.hpp"
 #include "Column.hpp"
 #include "Board.hpp"
+#include "CList.hpp"
+
 
 extern const char letters[];
 
@@ -19,17 +21,26 @@ class Game {
 private:
     Dice* myDie; // dice to point at a set of 4 dice
 
-    // TODO: Circular linked list implementation
-    Player* myPlayer;
-
     Board* myBoard; // board with an array of 11 cols
+
+    // still being debugged
+    // CList myPlayers;
+
+    // these will have to do
+    vector<Player*> myPlayers;
+
+    void getPlayers(); // gets all players and places them in CList
+    // ----------------------------------------------------- validate player inputs
+    bool checkData(string n, int c);
+    bool checkAction(int c); // validate player inputs
+    bool checkDie(char c1, char c2); // validate player inputs
 
 public:
     Game();  // Two Players, Dice set, Two Columns ready to go
     ~Game(); // free memory
     Player* getNewPlayer(); // input player data from keyboard
     int oneTurn (Player* pp);
-    void runGame();
+    int runGame();
 
 };
 

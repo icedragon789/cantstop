@@ -4,22 +4,83 @@
 // Created by Ben Placzek on 2/24/2021.  Revised 4/5/2021
 
 #include "Game.hpp"
+#include "BadPlayer.hpp"
+
+typedef Player* Item;
+
+bool Game::checkData(string n, int c) {
+    // validates a single player's input data
+    // name unique
+    for(int j=0; j<myPlayers.size(); j++) {
+        if ((n == myPlayers[j]->getName() && myPlayers[j]->getName() != "") &&
+            (c == myPlayers[j]->getColor() && myPlayers[j]->getColor() != 0)) {
+            throw BadPlayer(n,c);
+        }
+        else if(n == myPlayers[j]->getName() && myPlayers[j]->getName() != "") {
+            throw BadName(n, c);
+
+        }
+        else if(c == myPlayers[j]->getColor() && myPlayers[j]->getColor() != 0) {
+            throw BadColor(n, c);
+        }
+    }
+
+    return true;
+
+}
+
+bool Game::checkAction(int c) {
+    // validates a user input of their choice (oneTurn)
+    if ( c > 0 && c < 4) {
+        return true;
+    }
+    else if (c < 1 || c > 3) {
+        throw BadChoice(c,0,0); // int, char, char passed
+    }
+    else {
+        throw BadChoice(c,0,0); // int, char, char passed
+    }
+}
+
+
+// circular implementation being debugged
+void Game::getPlayers() {
+
+//    myPlayers.init();
+
+    char input = 'y'; // input for user to enter another player or not
+    do {
+//        myPlayers.addItem(getNewPlayer());
+        getNewPlayer();
+
+        // add up to 4 players in circular linked list
+//        if(myPlayers.count() < 4) {
+        if(myPlayers.size() < 4) {
+            cout << "Enter another player? (Y/N)" << endl;
+            cin >> input;
+        }
+            // if there is four players do not read another one
+        else {
+            input = 'n';
+        }
+
+    } while (tolower(input) == 'y');
+
+    cout << "Not reading players anymore." << endl;
+}
+
 
 Game::Game() {
 
-    // create dice to be used
     myDie = new CantStopDice(); // using normal cantstop dice
 //    myDie = new FakeDice(); // using fakedice from a file
-
     myBoard = new Board();
 
-    myPlayer = getNewPlayer(); // user input a player to use
 
 }
 
 Game::~Game() {
     delete myDie;
-    delete myPlayer;
     delete myBoard;
 }
 
@@ -28,27 +89,52 @@ Player* Game::getNewPlayer() {
 
     string myColor;
     string myName;
-    cout << "Enter your name." << endl;
-    cin >> myName;
-    // variable for error checking...
     colorEnum mySelection;
-    for( ; ; ){
-        cout << "Enter your color (orange, yellow, green, blue)" << endl;
-        cin >> myColor;
-        switch (tolower(myColor[0])) {
-            case 'o': mySelection = orange; break;
-            case 'y': mySelection = yellow; break;
-            case 'g': mySelection = green; break;
-            case 'b': mySelection = blue; break;
-            default: {
-                cout << "Invalid input, try again." << endl; colorEnum mySelection = ERR; continue;
+    Player* myPlayer;
+
+    try {
+        cout << "Enter your name." << endl;
+        cin >> myName;
+        // variable for error checking...
+        for (;;) {
+            cout << "Enter your color (orange, yellow, green, blue)" << endl;
+            cin >> myColor;
+            switch (tolower(myColor[0])) {
+                case 'o':
+                    mySelection = orange;
+                    break;
+                case 'y':
+                    mySelection = yellow;
+                    break;
+                case 'g':
+                    mySelection = green;
+                    break;
+                case 'b':
+                    mySelection = blue;
+                    break;
+                default: {
+                    cout << "Invalid input, try again." << endl;
+                    colorEnum mySelection = ERR;
+                    continue;
+                }
             }
+            break;  // leave loop
         }
-        break;  // leave loop
+        myPlayer = new Player(myName, mySelection);
+        if(checkData(myName, mySelection)) {
+            cout << "ADDING " << *myPlayer << " TO VECTOR." << endl;
+            myPlayers.push_back(myPlayer);
+        } // check our inputs
+
+    }catch(BadPlayer & bp){bp.print();}
+    catch (...) {
+        cerr << "General exception caught" << endl;
+        fatal("Fatal");
     }
 
+    // create a player object
+
     // return dynamically allocated player
-    Player* myPlayer = new Player(myName, mySelection);
     return myPlayer;
 }
 
@@ -62,8 +148,8 @@ int Game::oneTurn (Player *pp) {
     for ( ; ; ) {
         cout << *myBoard << endl;
 
-    // player won
-        if(pp->score() == 3) {
+        // player won
+        if (pp->score() == 3) {
             cout << " Player " << colors[pp->getColor()] << " Won!" << endl;
             return 1;
         }
@@ -78,27 +164,38 @@ int Game::oneTurn (Player *pp) {
         int myAction;
         cin >> myAction;
 
-        const int* diceList;
+        // exception for actions
+        try {
+            checkAction(myAction);
+
+        }catch(BadChoice & bc) {
+            bc.print();
+        }
+        catch (...) {
+            cerr << "General exception caught" << endl;
+        }
+
+        const int *diceList;
 
         switch (myAction) {
             case 1: { // roll
-                    // roll dice to generate random values
-                    diceList = myDie->roll(); // assign the result const int*  result to an array
+                // roll dice to generate random values
+                diceList = myDie->roll(); // assign the result const int*  result to an array
 
-                    if (diceList[0] == 0)  {
-                        myBoard->stop();
-                        return 0;
-                    }
+                if (diceList[0] == 0) {
+                    myBoard->stop();
+                    return 0;
+                }
 
-                    // bust if cannot move here
-                    if (!myBoard->move(diceList[0])) {
-                        cout << "BUST ! ! ! " << endl;
-                        myBoard->bust();
-                        return 0; // hand it back to any other players
-                    }
-                    // bust if cannot move here
-                    myBoard->move(diceList[1]);
-                    break;
+                // bust if cannot move here
+                if (!myBoard->move(diceList[0])) {
+                    cout << "BUST ! ! ! " << endl;
+                    myBoard->bust();
+                    return 0; // hand it back to any other players
+                }
+                // bust if cannot move here
+                myBoard->move(diceList[1]);
+                break;
             }
 
             case 2: // stop
@@ -108,16 +205,31 @@ int Game::oneTurn (Player *pp) {
             case 3: // TODO: resign
                 bye();
                 return 1;
-            default:
-                cout << "Invalid input, try again." << endl;
-                continue;
+//                default:
+//                    cout << "Invalid input, try again." << endl;
+//                    continue;
         }
     }
 }
 
-void Game::runGame() {
-    for(;;) {
-        if(oneTurn(myPlayer)) break;
-    }
-}
+int Game::runGame() {
+    getPlayers();
 
+    // prints players [ DEBUG ]
+    cout << "PLAYERS: " << endl;
+    for (int j = 0; j < myPlayers.size(); j++) {
+        cout << *myPlayers[j] << " ";
+    }
+
+//    cout << "Starting gameplay loop." << endl;
+
+//    cout << "We have " << myPlayers.count() << " players." << endl;
+
+    for (;;) {
+//        for(int j = 0; j<=myPlayers.count(); j++) {
+//        for (int j = 0; j <= myPlayers.size(); j++) {
+            if (oneTurn(myPlayers[0]) == true)
+                return 0;
+        }
+//    }
+}

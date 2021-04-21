@@ -6,17 +6,57 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.cpp
-Board.hpp
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.cpp
+BadPlayer.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
+tools.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
 Column.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Column.hpp
 
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/CList.hpp
+tools.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
+Player.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Player.hpp
+
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Column.hpp
 Player.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Player.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.cpp
+Dice.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
+tools.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
+BadPlayer.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.cpp
+Game.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.hpp
+BadPlayer.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/BadPlayer.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.hpp
+tools.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
+Dice.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Dice.hpp
+Player.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Player.hpp
+Column.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Column.hpp
+Board.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Board.hpp
+CList.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/CList.hpp
 
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Player.hpp
 enums.hpp
@@ -25,6 +65,10 @@ enums.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/enums.hpp
 tools.hpp
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
+
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/main.cpp
+Game.hpp
+/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/Game.hpp
 
 /cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/tools.hpp
 iostream

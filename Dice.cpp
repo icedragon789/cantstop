@@ -5,6 +5,18 @@
 
 #include "Dice.hpp"
 
+bool Dice::checkDie(char c1, char c2) {
+    // start with duplicate choices
+    if (c1 == c2) {
+        throw DuplicateSlot(0,c1,c2);
+    }
+    // check if between allowable A and D
+    if (toupper(c1) < 65 || toupper(c1) > 68) throw BadSlot(0,c1,c2);
+    if (toupper(c2) < 65 || toupper(c2) > 68) throw BadSlot(0,c1,c2);
+
+    return true;
+}
+
 Dice::Dice(int n) {
     nDice = n;
     randArray = new int[n]; // Allocate space for n items, but vec1 is still empty.
@@ -35,7 +47,6 @@ Dice::print(ostream &os) const {
     return os << endl;
 }
 
-
 // assign random values to dynamically allocated array
 const int *
 CantStopDice::roll() {
@@ -62,24 +73,20 @@ CantStopDice::roll() {
 
     // loop for entering dice selections
     for (;;) {
-        cout << "Enter two letters, each of which correspond to a dice." << endl;
-        cin >> firstInput >> secondInput;
-        firstInput = toupper(firstInput);
-        secondInput = toupper(secondInput);
-
-        // implicit ASCII conversion for input validation
-        if (firstInput == secondInput) {
-            cout << "Your inputs cannot be the same, try again. " << endl;
-            continue;
+        try {
+            cout << "Enter two letters, each of which correspond to a dice." << endl;
+            cin >> firstInput >> secondInput;
+            if(checkDie(firstInput, secondInput)) break;
+        }catch(BadChoice & bc) {
+            bc.print();
         }
-        //error handling
-        if ((firstInput > 64 && firstInput < 69) && (secondInput > 64 && secondInput < 69)) {
-            break;
-        } else {
-            cout << "Invalid input, try again. " << endl;
-            continue;
+        catch (...) {
+            cerr << "General exception caught" << endl;
         }
     }
+
+    firstInput = toupper(firstInput);
+    secondInput = toupper(secondInput);
 
 
     // assign bit array values that were selected by user

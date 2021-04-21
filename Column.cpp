@@ -28,6 +28,7 @@ ostream& Column::print(ostream& os) const {
         os << " | ";
     }
     os << "\n";
+    return os;
 }
 
 // placing a new tower and moving it one square forward

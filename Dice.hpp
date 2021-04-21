@@ -4,6 +4,7 @@
 // Created by Ben Placzek on 1/31/2021.  Revised 4/5/2021
 
 #include "tools.hpp"
+#include "BadPlayer.hpp"
 
 // please uncomment for each test
 //#define myTestFile "../test1.txt"
@@ -17,8 +18,8 @@ extern const char letters[];
 
 
 class Dice {
-
 protected:
+    bool checkDie(char c1, char c2);
     //Number of dice in the set
     int nDice;
     //Dynamically allocated array of nDice pseudo-random values
