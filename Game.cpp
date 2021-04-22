@@ -1,7 +1,7 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to start a game and create game flow
-// Created by Ben Placzek on 2/24/2021.  Revised 4/5/2021
+// Created by Ben Placzek on 2/24/2021.  Revised 4/21/2021
 
 #include "Game.hpp"
 #include "BadPlayer.hpp"
@@ -66,7 +66,6 @@ void Game::getPlayers() {
 
     } while (tolower(input) == 'y');
 
-    cout << "Not reading players anymore." << endl;
 }
 
 
@@ -120,9 +119,10 @@ Player* Game::getNewPlayer() {
             }
             break;  // leave loop
         }
-        myPlayer = new Player(myName, mySelection);
+
         if(checkData(myName, mySelection)) {
-            cout << "ADDING " << *myPlayer << " TO VECTOR." << endl;
+            // create a player object
+            myPlayer = new Player(myName, mySelection);
             myPlayers.push_back(myPlayer);
         } // check our inputs
 
@@ -132,7 +132,7 @@ Player* Game::getNewPlayer() {
         fatal("Fatal");
     }
 
-    // create a player object
+
 
     // return dynamically allocated player
     return myPlayer;
@@ -203,11 +203,7 @@ int Game::oneTurn (Player *pp) {
                 myBoard->stop();
                 return 0; // hand it back to any other players
             case 3: // TODO: resign
-                bye();
                 return 1;
-//                default:
-//                    cout << "Invalid input, try again." << endl;
-//                    continue;
         }
     }
 }
@@ -215,21 +211,15 @@ int Game::oneTurn (Player *pp) {
 int Game::runGame() {
     getPlayers();
 
-    // prints players [ DEBUG ]
+    // prints players
     cout << "PLAYERS: " << endl;
     for (int j = 0; j < myPlayers.size(); j++) {
         cout << *myPlayers[j] << " ";
     }
 
-//    cout << "Starting gameplay loop." << endl;
-
-//    cout << "We have " << myPlayers.count() << " players." << endl;
-
     for (;;) {
-//        for(int j = 0; j<=myPlayers.count(); j++) {
-//        for (int j = 0; j <= myPlayers.size(); j++) {
+
             if (oneTurn(myPlayers[0]) == true)
                 return 0;
         }
-//    }
 }

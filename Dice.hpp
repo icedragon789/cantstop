@@ -1,7 +1,7 @@
 
 // CSCI 4478 - Dr Alice Fischer
 // Purpose of program is to set up CantStop Dice and FakeDice.
-// Created by Ben Placzek on 1/31/2021.  Revised 4/5/2021
+// Created by Ben Placzek on 1/31/2021.  Revised 4/21/2021
 
 #include "tools.hpp"
 #include "BadPlayer.hpp"

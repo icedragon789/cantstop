@@ -1,0 +1,48 @@
+--------------------------------------------------------
+	Ben Placzek
+	CS 6626
+	Wed Apr 21 2021	15:41:52
+----------------------------------------------------------
+Enter your name.
+ben
+Enter your color (orange, yellow, green, blue)
+orange
+Enter another player? (Y/N)
+y
+Enter your name.
+ben
+Enter your color (orange, yellow, green, blue)
+green
+Enter another player? (Y/N)
+ Enter a name that is not being used
+You entered Name: ben and Color: green . Please reenter. 
+n
+PLAYERS: 
+Name: ben, Color: orange, Number of columns captured: 0 Scoreboard: {0, 0, 0}
+ Start Turn
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+3
+
+Normal termination.
+
+Process finished with exit code 0

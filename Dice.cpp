@@ -1,7 +1,7 @@
 
 // CSCI 4478 - Dr Alice Fischer
 // Purpose of program is to roll a number of dice, and write the results to file.
-// Created by Ben Placzek on 1/31/2021. Revised 4/5/2021
+// Created by Ben Placzek on 1/31/2021. Revised 4/21/2021
 
 #include "Dice.hpp"
 

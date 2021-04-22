@@ -1,0 +1,107 @@
+--------------------------------------------------------
+	Ben Placzek
+	CS 6626
+	Wed Apr 21 2021	23:30:24
+----------------------------------------------------------
+Enter your name.
+Ben
+Enter your color (orange, yellow, green, blue)
+orange
+Enter another player? (Y/N)
+Y
+Enter your name.
+Other
+Enter your color (orange, yellow, green, blue)
+yellow
+Enter another player? (Y/N)
+N
+PLAYERS: 
+Name: Ben, Color: orange, Number of columns captured: 0 Scoreboard: {0, 0, 0}
+ Name: Other, Color: yellow, Number of columns captured: 0 Scoreboard: {0, 0, 0}
+ Start Turn
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	4 
+B	3 
+C	1 
+D	5 
+Enter two letters, each of which correspond to a dice.
+A A
+ Enter two unique slot choices
+You entered : A, A. Please reenter. 
+Enter two letters, each of which correspond to a dice.
+A G
+ Enter valid slot choices
+You entered : A, G. Please reenter. 
+Enter two letters, each of which correspond to a dice.
+A B
+You rolled sums of 7 and 6
+
+
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+2
+Start Turn
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+3
+
+Normal termination.
+
+Process finished with exit code 0
