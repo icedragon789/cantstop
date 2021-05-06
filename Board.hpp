@@ -21,7 +21,7 @@ public:
     ostream& print(ostream& os) const;
     void startTurn(Player* p);
     bool move(int column);
-    void stop();
+    bool stop(); // true to stop the game false to continue
     void bust();
 
 };

@@ -11,7 +11,6 @@ Board::Board(){
     backBone[1] = NULL;
     // allocate each of the 11 columns each of proper length
     for (int j = 2; j < 13; j++) {
-//        backBone[j] = new Column(j);
         Column* addedCol = new Column(j);
         backBone[j] = addedCol;
 
@@ -24,8 +23,6 @@ Board::~Board() {
     for (int j = 2; j < 13; j++) {
         delete backBone[j];
     }
-
-
 }
 
 ostream& Board::print(ostream& os) const {
@@ -38,7 +35,6 @@ ostream& Board::print(ostream& os) const {
 }
 
 void Board::startTurn(Player *p) {
-    cout << "Start Turn" << endl;
     // store the Player*
     currentPlayer = p;
     // set tower counter and populated columns to zero
@@ -46,41 +42,28 @@ void Board::startTurn(Player *p) {
     for (int j = 0; j < 3; j++){
         towerCols[j] = 0;
     }
-
-    pickup();
-
+    pickup(); // function to resume progress of board
 }
 
 // private function called by move to pickup a players progress
 void Board::pickup() {
-
-//    cout << "CALLING PICKUP" << endl;
-
     // places a "tower" where our colored pieces are placed
     for (int j =2; j<13; j++) {
         if(backBone[j]->getColPos(currentPlayer->getColor()) != 0) {
             towerCols[towerCounter] = j;
             towerCounter+=1;
-
         }
     }
-
-//    cout << "FROM PICKUP TOWER COUNTER: " << towerCounter << endl;
-//    cout << "FROM PICKUP POPULATED COLS : " << endl;
-//    for (int j = 0; j<3; j++) {
-//        cout << towerCols[j] << " ";
-//    }
-//    cout << endl;
-
 }
 
 bool Board::move(int column) {
-
     // start with a column
     Column* myCol = backBone[column];
 
+
     // return false immediately if captured or pending
     if(myCol->state() == captured || myCol->state() == pending) {
+        backBone[column]->stop(currentPlayer); // stop in order to place colored tiles
         return false;
     }
 
@@ -104,34 +87,40 @@ bool Board::move(int column) {
         }
     }
 
-//    cout << "TOWER IN COLUMN: " << towerInColumn << endl;
-
     if (!towerInColumn) towerCols[++towerCounter] = column;
 
-//    cout << "POPULATED COLS AT " << towerCounter << " NOW HAS " << column << endl;
-//    cout << "TOWER COUNTER: " << towerCounter << endl;
-
     // if we are out of towers return false
-    if(towerCounter >= 3 && towerInColumn == false) {
+    if(towerCounter >= 3 && !towerInColumn) {
         return false;
     }
 
     // place a tower in next available slot in the column
-    if(myCol->startTower(currentPlayer)) myCol->move();
-
-    cout << endl;
+    if(myCol->startTower(currentPlayer)) {
+        myCol->move();
+    }
 
     return true;
 
 }
 
-void Board::stop() {
+// returns 1 to end the game 0 otherwise
+bool Board::stop() {
+
+    cout << "Ending turn for Player " << colors[currentPlayer->getColor()] << endl;
     // replace all towers by tiles of the correct color
     // use the tower array to decide which columns should be stopped
     for (int j =0; j<3; j++) {
         if(towerCols[j] != 0) {
             backBone[towerCols[j]]->stop(currentPlayer);
         }
+    }
+
+    // player won
+    if (currentPlayer->score() == 3) {
+        cout << " Player " << colors[currentPlayer->getColor()] << " Won!" << endl;
+        cout << "Thanks for playing!" << endl;
+        bye();
+        return 1;
     }
 }
 

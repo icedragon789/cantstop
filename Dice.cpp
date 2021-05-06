@@ -127,9 +127,14 @@ FakeDice::roll() {
         diceTot[1] = generatedDice[2] + generatedDice[3];
 
     }
-    else { // this case is a S in the file
+    else if (instruction == 'S') { // this case is a S in the file
         diceTot[0] = 0; // assign array all zeros
         diceTot[1] = 0;
+    }
+    else if (instruction = 'L') {
+
+        diceTot[0] = -1; // negative ones array for resign
+        diceTot[1] = -1;
     }
 
     // return pointer to pair array

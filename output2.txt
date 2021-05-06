@@ -1,0 +1,457 @@
+--------------------------------------------------------
+	Ben Placzek
+	CS 6626
+	Thu May  6 2021	18:38:01
+----------------------------------------------------------
+Enter your name.
+ben
+Enter your color (orange, yellow, green, blue)
+orange
+Enter another player? (Y/N)
+n
+----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	5 
+B	6 
+C	4 
+D	5 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 11 and 9
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| T---- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	1 
+B	5 
+C	1 
+D	1 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 6 and 2
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| T---- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	4 
+B	6 
+C	6 
+D	3 
+Enter two letters, each of which correspond to a dice.
+c
+d
+You rolled sums of 9 and 10
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| T---- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+2
+Ending turn for Player orange
+TOWER COLS: 11 TOWER COLS: 9 TOWER COLS: 6 ----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	4 
+B	3 
+C	2 
+D	2 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 7 and 4
+BUST ! ! ! 
+----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	4 
+B	3 
+C	6 
+D	2 
+Enter two letters, each of which correspond to a dice.
+b
+c
+You rolled sums of 9 and 6
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| -O--- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | -O--- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+2
+Ending turn for Player orange
+TOWER COLS: 6 TOWER COLS: 9 TOWER COLS: 11 ----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	2 
+B	4 
+C	5 
+D	3 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 6 and 8
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | -O--- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+2
+Ending turn for Player orange
+TOWER COLS: 6 TOWER COLS: 9 TOWER COLS: 11 ----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	2 
+B	6 
+C	2 
+D	4 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 8 and 6
+BUST ! ! ! 
+----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	4 
+B	5 
+C	1 
+D	2 
+Enter two letters, each of which correspond to a dice.
+a
+b
+You rolled sums of 9 and 3
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | -O--- | T---- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+2
+Ending turn for Player orange
+TOWER COLS: 6 TOWER COLS: 9 TOWER COLS: 11 ----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	3 
+B	1 
+C	3 
+D	4 
+Enter two letters, each of which correspond to a dice.
+a
+c
+You rolled sums of 6 and 5
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | T---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+1
+Rolling 4 dice.
+A	1 
+B	3 
+C	1 
+D	4 
+Enter two letters, each of which correspond to a dice.
+a
+c
+You rolled sums of 2 and 7
+BUST ! ! ! 
+----------------------------------------------------------
+PLAYER ROSTER
+----------------------------------------------------------
+| Name: ben | Color: orange | Number of columns captured: 0 | Scoreboard: [0, 0, 0]
+----------------------------------------------------------
+Beginning of Turn for orange player.
+----------------------------------------------------------
+Column: 2	State: available	| ----- | ----- | ----- | 
+Column: 3	State: available	| ----- | ----- | ----- | ----- | ----- | 
+Column: 4	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 5	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 6	State: available	| ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 7	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 8	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 9	State: available	| ----- | ----- | ----- | -O--- | ----- | ----- | ----- | ----- | ----- | 
+Column: 10	State: available	| ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+Column: 11	State: available	| -O--- | ----- | ----- | ----- | ----- | 
+Column: 12	State: available	| ----- | ----- | ----- | 
+
+----------------------------------------------------------
+Player orange, make a selection.
+----------------------------------------------------------
+1 - Roll
+2 - Stop
+3 - Resign
+3
+
+Normal termination.
+Ending turn for Player orange
+TOWER COLS: 6 TOWER COLS: 9 TOWER COLS: 11 Player orange has resigned!
+0 Players remain.
+Thanks for playing!
+
+Process finished with exit code 0

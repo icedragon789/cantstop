@@ -1,7 +1,7 @@
 
 // CSCI 4526 - Dr Alice Fischer
 // Purpose of program is to incorporate a circular linked list for Players
-// Created by Ben Placzek on 3/27/2021. Revised 3/28/2021.
+// Created by Ben Placzek on 3/27/2021. Revised 5/6/2021.
 
 #include "CList.hpp"
 
@@ -18,10 +18,9 @@ ostream &CList::print(ostream &os) const {
     Cell *temp = headPtr;
     if (headPtr != NULL) {
         do {
-            os << *temp->myItem;
+            os << *temp->myPlayer;
             temp = temp->next;
         } while (temp != headPtr);
-        os << endl;
     } else {
         os << "List empty";
     }
@@ -29,11 +28,11 @@ ostream &CList::print(ostream &os) const {
 }
 
 // insert a new Player inside new Cell into CList
-void CList::addItem(Item p){
+void CList::addItem(Player* p){
     Cell* temp = headPtr;
     Cell* myInsert = new Cell(p, temp);
 
-    myInsert->myItem = p; // assign player data
+    myInsert->myPlayer = p; // assign player data
     myInsert->next = headPtr; // circular in nature
 
     // create new cell
@@ -55,14 +54,17 @@ void CList::init() {
 }
 
 // move current item pointer to next cell in list
-Item CList::next() {
+Player* CList::next() {
     if (headPtr != nullptr) {
         current = current->next; // move current to next in list
     }
-    else {
-        cout << "List empty";
-    }
-    return current->myItem;
+
+    // unnecessary
+
+//    else {
+//        cout << "List empty";
+//    }
+    return current->myPlayer;
 
 }
 
@@ -82,7 +84,7 @@ void CList::remove(){
     Cell *d = headPtr;
 
     // if current is the head
-    if(headPtr->myItem == current->myItem) {
+    if(headPtr->myPlayer == current->myPlayer) {
         while(last->next != headPtr) last = last->next; // find last
         // point last node to next of head
         last->next = headPtr->next;
@@ -94,14 +96,14 @@ void CList::remove(){
         // any other cases
     else {
         // end of list reached or current not in list
-        while (last->next != headPtr && last->next->myItem != current->myItem) {
+        while (last->next != headPtr && last->next->myPlayer != current->myPlayer) {
             last = last->next;
         }
 
         int i = 0;
         // current found so free memory and display the new list
         while (i < counter) {
-            if (d->next->myItem == current->myItem) {
+            if (d->next->myPlayer == current->myPlayer) {
                 d->next = current->next;
                 delete current;
                 current = d;

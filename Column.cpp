@@ -42,9 +42,12 @@ bool Column::startTower(Player* p) {
         colPositions[0] = 0;
         return true;
     }
-    else {
+    else if (colPositions[0] == 0) {
         colPositions[0] = colPositions[p->getColor()]; // place tower square after colored tile
     }
+//    else {
+//        colPositions
+//    }
 
 
 // return true if successfully places a tower
@@ -74,7 +77,7 @@ void Column::stop(Player* p) {
 
     // set pending to captured
     if(myState == pending) {
-        p->wonColumn(colPositions[p->getColor()]); // win this column
+        p->wonColumn(colNum); // win this column
         myState = captured;
     }
 }

@@ -27,10 +27,10 @@ bool Player::wonColumn (int colNum) {
 // Prints name and color of player
 ostream &
 Player::print(ostream &os) const {
-    os << "Name: " << name << ", Color: " << colors[color] <<
-        ", Number of columns captured: " << numCols <<
-        " Scoreboard: {" << scoreboard[0] << ", " <<
-        scoreboard[1] << ", " << scoreboard[2] << "}" << endl;
+    os << "| Name: " << name << " | Color: " << colors[color] <<
+        " | Number of columns captured: " << numCols <<
+        " | Scoreboard: [" << scoreboard[0] << ", " <<
+        scoreboard[1] << ", " << scoreboard[2] << "]" << endl;
 
     return os;
 }

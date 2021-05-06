@@ -23,24 +23,21 @@ private:
 
     Board* myBoard; // board with an array of 11 cols
 
-    // still being debugged
-    // CList myPlayers;
-
-    // these will have to do
-    vector<Player*> myPlayers;
+    CList* myPlayers; // circular linked list implementation
 
     void getPlayers(); // gets all players and places them in CList
     // ----------------------------------------------------- validate player inputs
     bool checkData(string n, int c);
     bool checkAction(int c); // validate player inputs
-    bool checkDie(char c1, char c2); // validate player inputs
 
 public:
     Game();  // Two Players, Dice set, Two Columns ready to go
     ~Game(); // free memory
     Player* getNewPlayer(); // input player data from keyboard
     int oneTurn (Player* pp);
-    int runGame();
+    bool resign();
+    int play();
+
 
 };
 

@@ -1,3 +1,0 @@
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/BPlaz/Documents/School/UNH/JUNIOR/S2/Advanced CPP/Term Project/P9-Placzek/cmake-build-debug/CMakeFiles/P2_Placzek.dir

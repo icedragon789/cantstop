@@ -7,9 +7,9 @@
 #include "BadPlayer.hpp"
 
 // please uncomment for each test
-//#define myTestFile "../test1.txt"
+#define myTestFile "../test1.txt"
 //#define myTestFile "../test2.txt"
-#define myTestFile "../test3.txt"
+//#define myTestFile "../test3.txt"
 
 extern const char letters[];
 
@@ -56,7 +56,7 @@ class FakeDice: public CantStopDice {
 private:
     ifstream myStream;
 public:
-    FakeDice() { myStream.open (myTestFile, std::ifstream::in); }; // open stream
+    FakeDice() { myStream.open (myTestFile, ifstream::in); }; // open stream
     ~FakeDice()=default; // close stream
     const int* roll(); // derived from CantStopDice
 };
