@@ -6,9 +6,16 @@
 #include "Player.hpp"
 
 
+int Player::memCounter = 0;
+
 // takes console input for name and color
 // ctor for name and color
-Player::Player(string n, colorEnum c): name(n), color(c) {};
+Player::Player(string n, colorEnum c): name(n), color(c) { memCounter++; }
+
+Player::~Player() {
+    memCounter--;
+    cout << "Player counter: " << memCounter << endl;
+}
 
 bool Player::wonColumn (int colNum) {
     // important error checking: CANT STOP has columns 2-12

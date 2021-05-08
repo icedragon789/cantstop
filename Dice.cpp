@@ -5,6 +5,9 @@
 
 #include "Dice.hpp"
 
+int Dice::memCounter = 0;
+
+
 bool Dice::checkDie(char c1, char c2) {
     // start with duplicate choices
     if (c1 == c2) {
@@ -17,13 +20,20 @@ bool Dice::checkDie(char c1, char c2) {
     return true;
 }
 
-Dice::Dice(int n) {
-    nDice = n;
+Dice::Dice(int n): nDice(n) {
+    memCounter++;
     randArray = new int[n]; // Allocate space for n items, but vec1 is still empty.
     //Initialize the random number generator
     srand(time(nullptr));
 
-};
+}
+
+Dice::~Dice(){
+    memCounter--;
+    cout << "Dice counter: " << memCounter << endl;
+
+    delete[] randArray;
+}
 
 // assign random values to dynamically allocated array
 const int *

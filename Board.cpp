@@ -5,7 +5,11 @@
 
 #include "Board.hpp"
 
+int Board::memCounter = 0;
+
 Board::Board(){
+
+    memCounter++;
     // set array elements 0 and 1 to null
     backBone[0] = NULL;
     backBone[1] = NULL;
@@ -18,11 +22,16 @@ Board::Board(){
 }
 
 Board::~Board() {
+
+    memCounter--;
+    cout << "Board counter: " << memCounter << endl;
+
 //    delete currentPlayer; // free Player*
     // loop to deallocate memory in backBone array
     for (int j = 2; j < 13; j++) {
         delete backBone[j];
     }
+
 }
 
 ostream& Board::print(ostream& os) const {
@@ -56,7 +65,7 @@ void Board::pickup() {
     }
 }
 
-bool Board::move(int column) {
+bool Board::move(const int column) {
     // start with a column
     Column* myCol = backBone[column];
 
@@ -116,12 +125,13 @@ bool Board::stop() {
     }
 
     // player won
-    if (currentPlayer->score() == 3) {
+    if (currentPlayer->getScore() == 3) {
         cout << " Player " << colors[currentPlayer->getColor()] << " Won!" << endl;
         cout << "Thanks for playing!" << endl;
         bye();
         return 1;
     }
+    return 0;
 }
 
 void Board::bust() {

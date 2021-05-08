@@ -12,38 +12,39 @@
 
 
 class Cell {
-private: // all servant members will be private
-    Player* myPlayer; // hold the data
-    Cell* next; // form the linked list
+private:
+    Player* myPlayer;   // hold the data
+    Cell* next;         // form the linked list
     Cell(Player* data, Cell* reference): myPlayer(data), next(reference) {
-        reference=nullptr;
+        next=nullptr;
     };
     ~Cell() { delete myPlayer; }
 
-    friend class CList; // gives friendship to CList
+    friend class CList;     // gives friendship to CList
 };
 
 
 class CList {
 private:
-    int counter; // store number of Items in the list
+    static int memCounter;      // counter to trace memory leaks
+    int counter;                // store number of Items in the list
     Cell *headPtr;
-    Cell* current; // pointer to the current item
+    Cell* current;              // pointer to the current item
 
 public:
-    CList() { headPtr = nullptr; }; // constructor initializes the list to empty
-    ~CList(); // destructor deletes all cells in list
-    int count() {return counter;}; // returns # items in list
-    bool empty() { // return true if 0 Items and false otherwise
+    CList();
+    ~CList();                           // destructor deletes all cells in list
+    int count() {return counter;};      // returns # items in list
+    bool empty() {                      // return true if 0 Items and false otherwise
         if (counter == 0) return true;
         else return false;
     }
     Player* getCurr() { return current->myPlayer;} // return where we are at
     ostream& print(ostream& os) const;
-    void addItem(Player* p); // insert a new Player inside new Cell into CList
-    void init(); // set current item pointer to the first cell in the CList
-    Player* next(); // move current item pointer to next cell in list
-    void remove(); // removes the current Item and Cell from list delete both
+    void addItem(Player* p);        // insert a new Player inside new Cell into CList
+    void init();                    // set current item pointer to the first cell in the CList
+    Player* next();                 // move current item pointer to next cell in list
+    void remove();                  // removes the current Item and Cell from list delete both
 
 };
 

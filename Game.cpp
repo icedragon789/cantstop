@@ -6,6 +6,8 @@
 #include "Game.hpp"
 #include "BadPlayer.hpp"
 
+int Game::memCounter = 0;
+
 bool Game::checkData(string n, int c) {
     // validates a single player's input data
     // name unique
@@ -70,6 +72,8 @@ void Game::getPlayers() {
 
 
 Game::Game() {
+    memCounter++;
+
     myPlayers = new CList();
     myDie = new CantStopDice(); // using normal cantstop dice
 //    myDie = new FakeDice(); // using fakedice from a file
@@ -79,8 +83,15 @@ Game::Game() {
 }
 
 Game::~Game() {
+    memCounter--;
+    cout << "Game counter: " << memCounter << endl;
+
+    for(int j = 0; j<myPlayers->count(); j++) {
+        myPlayers->remove();
+    }
     delete myDie;
     delete myBoard;
+    delete myPlayers;
 }
 
 // function takes console input and returns a player

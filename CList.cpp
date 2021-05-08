@@ -5,11 +5,22 @@
 
 #include "CList.hpp"
 
+int CList::memCounter = 0;
+
+// constructor initializes the list to empty
+CList::CList() {
+    memCounter++;
+    headPtr = nullptr;
+}
+
 CList::~CList() {
+    memCounter--;
+    cout << "CList counter: " << memCounter << endl;
+
     // delete all cells in list
     while(headPtr != nullptr) {
         Cell* temp = headPtr->next;
-        delete headPtr;
+        headPtr = nullptr;
         headPtr = temp;
     }
 }
@@ -75,7 +86,7 @@ void CList::remove(){
     if(headPtr == nullptr) return;
     // list contains one cell
     if(headPtr->next == headPtr) {
-        headPtr = nullptr;
+        delete headPtr;
         counter--;
         return;
     }
@@ -88,6 +99,7 @@ void CList::remove(){
         while(last->next != headPtr) last = last->next; // find last
         // point last node to next of head
         last->next = headPtr->next;
+        delete headPtr;
         headPtr = last->next;
         current = headPtr;
         counter--;

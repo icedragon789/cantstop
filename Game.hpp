@@ -19,14 +19,13 @@ extern const char letters[];
 class Game {
 
 private:
+    static int memCounter;      // counter to trace memory leaks
     Dice* myDie; // dice to point at a set of 4 dice
-
     Board* myBoard; // board with an array of 11 cols
-
     CList* myPlayers; // circular linked list implementation
-
     void getPlayers(); // gets all players and places them in CList
-    // ----------------------------------------------------- validate player inputs
+
+    // validate player inputs
     bool checkData(string n, int c);
     bool checkAction(int c); // validate player inputs
 

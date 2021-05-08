@@ -10,6 +10,7 @@
 
 class Board {
 private:
+    static int memCounter;      // counter to trace memory leaks
     int towerCounter;        // number of towers that are in use
     int towerCols[3];        //  which columns contain towers
     Column* backBone[13];    // column pointer array
@@ -20,7 +21,7 @@ public:
     ~Board();
     ostream& print(ostream& os) const;
     void startTurn(Player* p);
-    bool move(int column);
+    bool move(const int column);
     bool stop(); // true to stop the game false to continue
     void bust();
 

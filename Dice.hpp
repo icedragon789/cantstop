@@ -19,6 +19,7 @@ extern const char letters[];
 
 class Dice {
 protected:
+    static int memCounter;      // counter to trace memory leaks
     bool checkDie(char c1, char c2);
     //Number of dice in the set
     int nDice;
@@ -27,7 +28,7 @@ protected:
 public:
     // Constructor and Destructor
     Dice(int n);
-    virtual ~Dice(){ delete[] randArray;  };
+    virtual ~Dice();
 
     virtual const int* roll();
     ostream& print(ostream& os) const;

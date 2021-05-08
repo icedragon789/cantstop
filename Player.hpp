@@ -12,6 +12,7 @@ extern const string colors[];
 class Player {
 
 private:
+    static int memCounter;      // counter to trace memory leaks
     string name;
     colorEnum color; // color blue, red, green, yellow, white
     int numCols = 0 ;     // number of columns the player has captured, initially 0
@@ -19,11 +20,11 @@ private:
 public:
     // Constructor and Destructor
     Player(string n, colorEnum c);
-    ~Player()=default;
+    ~Player();
 
     colorEnum getColor()  { return color;}
     string getName()  { return name;}
-    int score()  { return numCols; }
+    int getScore()  { return numCols; }
     // returns true if player wins 3 columns, false otherwise
     bool wonColumn (int colNum);
 

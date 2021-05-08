@@ -48,11 +48,10 @@ public:
 
 };
 
-// Operator overload to call print statement for player object
+// Operator overload to call print statement for column object
 inline ostream& operator <<( ostream& os, Column& myColumn) {
     return myColumn.print(os);
 }
-
 
 
 #endif //MAIN_CPP_COLUMN_HPP
